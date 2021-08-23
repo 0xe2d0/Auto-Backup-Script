@@ -11,11 +11,11 @@ import pathlib
 import argparse
 
 try:
-    args = argparse.ArgumentParser(description="Automatic Backup Project")
-    args.add_argument('-p','--path',required=False,default=".",help="Folder path to backup")
-    args.add_argument('-o','--output',required=False,default=f'../backup',help="Backup folder path")
-    args.add_argument('-l','--log-file',required=False,default="backup.log",help="Backup logs file")
-    args.add_argument('-t','--time',required=False,default=30,type=int,help="Backup timelapse")
+    args = argparse.ArgumentParser(description="ABS Project minimal backup service")
+    args.add_argument('-p','--path',required=False,default=".",help="Name of the folder to be backed up")
+    args.add_argument('-o','--output',required=False,default=f'../backup',help="Path of output directory")
+    args.add_argument('-l','--log-file',required=False,default="backup.log",help="Name of log files")
+    args.add_argument('-t','--time',required=False,default=30,type=int,help="Backup time interval")
     arguments = args.parse_args()
 
     def folder_check(val):
@@ -50,7 +50,7 @@ try:
 
         context += "\n+"+"-"*50+"+"
         with open(arguments.log_file,'a') as f:
-            f.write('All and its contents copied !!!\n')
+            f.write('All files copied !!!')
             f.write(context+"\n\n")
             f.close()
 
@@ -83,7 +83,7 @@ try:
             folder = str(i)+" /"
             logInfos.append((folder,kb))
         
-        print(Fore.BLUE+'\nAll and its contents copied !!'+Fore.RESET)
+        print(Fore.BLUE+'\nAll files copied !!!'+Fore.RESET)
         print(log(logInfos))
         write_log(logInfos)
 
@@ -93,5 +93,5 @@ try:
         backup()
         time.sleep(arguments.time)
 except KeyboardInterrupt :
-    print("Backup service closing .....")
+    print("\nBackup Service Closing")
     exit()
