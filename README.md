@@ -20,10 +20,10 @@ Help Command :
     
 Other Parameters Description:
     <ul>
-       <li>**-p --path** : Path of the folder to be backed up. Default : your path</li>
-       <li>**-o --output** : Folder path of backups . Default: ../backup/</li>
-       <li>**-l --log-file** : Name of log file. Default : backup.log</li>
-       <li>**-t --time**: Time range of backups. Default: 20 second </li>
+       <li>**-p --path** : Path of the folder to be backed up. Default : **your path**</li>
+       <li>**-o --output** : Folder path of backups . Default: **../backup/**</li>
+       <li>**-l --log-file** : Name of log file. Default :** backup.log**</li>
+       <li>**-t --time**: Time range of backups. Default:** 20 second** </li>
     </ul>
     
 **The default use of parameters is sufficient for you, but if you want to change them, you can read these explanations.**
