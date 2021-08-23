@@ -20,7 +20,6 @@ Help Command :
     
 Other Parameters Description:
     <ul>
-  
        <li>**-p --path** : Path of the folder to be backed up. Default : your path</li>
        <li>**-o --output** : Folder path of backups . Default: ../backup/</li>
        <li>**-l --log-file** : Name of log file. Default : backup.log</li>
