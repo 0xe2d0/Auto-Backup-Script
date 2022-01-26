@@ -6,8 +6,8 @@
 
 
 ## ⚒️ Installation
-<pre><code>git clone https://github.com/eyyub1337/ABS-Project</code></pre>
-<pre><code>cd ABS-Project</code></pre>
+<pre><code>git clone https://github.com/0xe2d0/Auto-Backup-Script</code></pre>
+<pre><code>cd Auto-Backup-Script</code></pre>
 <pre><code>chmod 777 abs.py</code></pre>
 <pre><code>pip3 install -r requirements.txt</code></pre>
 **That's it 🤠**
